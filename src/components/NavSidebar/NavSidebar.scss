@@ -1,7 +1,7 @@
 $primaryLightColor: #ffeeee;
 
 .sidebar-ui {
-  width: 275px;
+  width: 225px;
   position: fixed;
   content: "";
   left: 0;
@@ -9,7 +9,7 @@ $primaryLightColor: #ffeeee;
   top: 0;
   right: 0;
   z-index: 99;
-  border: 1px solid rgb(225 225 225);
+  border-right: 1px solid rgb(225 225 225);
   background-color: #efefef;
 
   .ssui-header {
@@ -24,7 +24,7 @@ $primaryLightColor: #ffeeee;
       color: inherit;
       text-decoration: none;
       font-size: 20px;
-      padding: 10px 15px;
+      padding: 5px 15px;
       width: 100%;
       font-weight: bold;
       text-transform: uppercase;
@@ -38,11 +38,11 @@ $primaryLightColor: #ffeeee;
     overflow-y: auto;
 
     .ssui-link {
-      padding: 15px 0px 15px 55px;
+      padding: 15px 0px 15px 50px;
       width: 100%;
       color: inherit;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 14px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -51,7 +51,7 @@ $primaryLightColor: #ffeeee;
 
       .icon {
         position: absolute;
-        left: 25px;
+        left: 20px;
         font-size: 18px;
         color: #666;
         top: calc(50% - 10px);

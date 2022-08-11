@@ -32,7 +32,7 @@ body {
 }
 
 .dashboard-layout {
-  padding-left: 275px;
+  padding-left: 225px;
   background-color: #F8F9FA;
   height: 100vh;
 
@@ -41,7 +41,8 @@ body {
   }
 
   .content-area {
-    height: calc(100vh - 109px);
+    height: calc(100vh - 74px);
+    // height: calc(100vh - 109px);
     padding: 20px;
   }
 }

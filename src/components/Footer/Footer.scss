@@ -1,9 +1,7 @@
-$bgColor: #ffffff;
-$linkColor: #000000;
-$iconColor: red;
-$primaryColor: #ff5200;
-
 .app-footer {
-  padding: 16px;
-  text-align: center;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
 }
