@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .auth-page-ui {
   display: flex;
   justify-content: center;
@@ -24,5 +28,20 @@
   .auth-form {
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+.dashboard-layout {
+  padding-left: 275px;
+  background-color: #F8F9FA;
+  height: 100vh;
+
+  .sidebar {
+    height: 100vh;
+  }
+
+  .content-area {
+    height: calc(100vh - 109px);
+    padding: 20px;
   }
 }

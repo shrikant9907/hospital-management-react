@@ -1,8 +1,11 @@
 import React from 'react'
+import PageLayout from '../_layouts/PageLayout'
 
 const PageNotFound = () => {
   return (
-    <div>PageNotFound</div>
+    <PageLayout heading="Page Not Found.">
+      Page Not Found.
+    </PageLayout>
   )
 }
 

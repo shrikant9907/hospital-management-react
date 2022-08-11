@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function TermsAndConditionsPage() {
+const TermsAndConditionsPage = () => {
   return (
     <div>TermsAndConditionsPage</div>
   )
 }
+
+export default TermsAndConditionsPage

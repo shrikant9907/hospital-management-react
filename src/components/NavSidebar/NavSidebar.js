@@ -2,108 +2,69 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./NavSidebar.scss";
 
+import { FaUserMd, FaUsers } from "react-icons/fa";
+import { AiFillDashboard, AiFillSetting } from "react-icons/ai";
+
 const NavSidebar = () => {
+  
+  const handleActivePage = (page) => {
+    localStorage.setItem('page', page); 
+  }
 
   const sidebarLinks = [
     {
       active: true,
-      label: 'Accordion',
-      link: 'accordion',
+      label: 'Dashboard',
+      link: '/dashboard',
+      haveSubMenus: false,
+      icon: <AiFillDashboard />
     },
     {
       active: true,
-      label: 'Alert',
-      link: 'alert'
+      label: 'Doctors',
+      link: '/doctors',
+      haveSubMenus: false,
+      icon: <FaUserMd />
     },
     {
       active: true,
-      label: 'Breadcrum',
-      link: 'breadcrum'
+      label: 'Patients',
+      link: '/patients',
+      haveSubMenus: false,
+      icon: <FaUsers />
     },
     {
       active: true,
-      label: 'Button',
-      link: 'button'
+      label: 'Users',
+      link: '/users',
+      haveSubMenus: false,
+      icon: <FaUsers />
     },
     {
       active: true,
-      label: 'Card',
-      link: 'card'
-    },
-    {
-      active: true,
-      label: 'Form',
-      link: 'form'
-    },
-    {
-      active: true,
-      label: 'Listing',
-      link: 'listing'
-    },
-    {
-      active: true,
-      label: 'Loader',
-      link: 'loader'
-    },
-    {
-      active: true,
-      label: 'Modal',
-      link: 'modal'
-    },
-    {
-      active: true,
-      label: 'Pagination',
-      link: 'pagination'
-    },
-    {
-      active: true,
-      label: 'Pricing Table',
-      link: 'pricing-table'
-    },
-    {
-      active: true,
-      label: 'Progress Bar',
-      link: 'progress-bar'
-    },
-    {
-      active: true,
-      label: 'Social Icon',
-      link: 'social-icon'
-    },
-    {
-      active: true,
-      label: 'Star Icon',
-      link: 'star-icon'
-    },
-    {
-      active: true,
-      label: 'Table',
-      link: 'table'
+      label: 'Settings',
+      link: '/settings',
+      haveSubMenus: false,
+      icon: <AiFillSetting />
     },
   ]
 
   return (
-    <div className="flex-shrink-0 bg-light sidebar nooverlay active">
-      <div className="sbheader">
-        <Link className="shlink text-center" to="/">
-          <span className="shtext">W3UI</span>
+    <div className="sidebar-ui">
+      <div className="ssui-header">
+        <Link className="shlink" to="/dashboard">
+          Dashboard
         </Link>
       </div>
-      <div className="sbbody">
-        <ul id="sidebarAccordion">
-          <li>
-            <span className="accordion-button-old btn btn-toggle collapsed">
-              Components
-            </span>
-            <div className="collapse show">
-              <ul className="btn-toggle-nav">
-                {sidebarLinks && sidebarLinks.map((item, idx) => <li key={idx}><Link to={`/${item.link}`}>{item.label}</Link></li>)}
-              </ul>
-            </div>
-          </li>
-        </ul>
+      <div className="ssui-body">
+        {sidebarLinks && sidebarLinks.map((item, idx) =>
+          <Link onClick={() => handleActivePage(item.link)} className='ssui-link' key={idx} to={`${item.link}`}>
+            <span className="icon">{item.icon}</span>
+            <span className="label">{item.label}</span>
+          </Link>)
+        }
       </div>
-      <div className="sbfooter">
+      <div className="ssui-footer">
 
       </div>
     </div>

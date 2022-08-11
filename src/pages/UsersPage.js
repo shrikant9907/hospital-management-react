@@ -1,14 +1,14 @@
 import React from 'react';
 import DashboardLayout from '../_layouts/DashboardLayout';
 
-const DashboardPage = (props) => {
+const UsersPage = (props) => {
   return (
     <>
       <DashboardLayout>
-        Dashboard Page
+        Users Page
       </DashboardLayout>
     </>
   )
 }
 
-export default DashboardPage;
+export default UsersPage;
