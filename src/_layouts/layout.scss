@@ -44,5 +44,7 @@ body {
     height: calc(100vh - 74px);
     // height: calc(100vh - 109px);
     padding: 20px;
+    overflow-y: auto;
   }
+
 }

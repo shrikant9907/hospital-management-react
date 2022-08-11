@@ -934,3 +934,11 @@ export const checkNaN = (value, field = '') => {
   }
   return value;
 }
+
+// Convert Path Name to Name
+export const convertPathnameTolabel = (label) => {
+	if (label !== '') {
+		label = label['1'].toUpperCase() + label.substring(2).replaceAll("-", " ")
+	}
+	return label;
+}
