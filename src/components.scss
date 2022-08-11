@@ -3,12 +3,12 @@
 /*      Full Stack Web Developer                                                            */ 
 /*      Version         : 4.0                                                               */
 
-$primaryColor: #f34423;
+$primaryColor: #117CA6;
 $primaryLightColor: #ffeeee;
-$primaryDarkColor: #df2500;
-$secondaryColor: #007bff;
+$primaryDarkColor: #0e5977;
+$secondaryColor: #4b4b4b;
 $secondaryLightColor: #ebf5ff;
-$secondaryDarkColor: #0067d4;
+$secondaryDarkColor: #222222;
 $cardShadow: 0 6px 6px 4px rgba(0, 0, 0, 0.04);
 $fontFamilyText: "Open Sans", sans-serif; 
 $fontFamilyHeading: "Lato", sans-serif; 
@@ -44,7 +44,7 @@ pre {
   &.code,
   &.mycode {
     padding: 10px;
-    color: #f34423;
+    color: #117CA6;
   }
 }
 
@@ -265,7 +265,7 @@ pre {
 }
 
 /*Heading Styles*/ 
-.heading_style {
+.heading-ui {
     text-align: center;
     width: 100%;
     display: block;
@@ -793,7 +793,7 @@ header {
     &.cui3c,
     &.cui2c,
     &.cui2 {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         background: #ffffff;
         border: none;
         // box-shadow:0 5px 10px 0px rgba(0, 0, 0, 0.2);

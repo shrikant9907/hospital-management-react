@@ -8,8 +8,10 @@ import { AiFillDashboard, AiFillSetting } from "react-icons/ai";
 const NavSidebar = () => {
   
   const handleActivePage = (page) => {
-    localStorage.setItem('page', page); 
+    localStorage.setItem('activePage', page); 
   }
+
+  const activePage = localStorage.getItem('activePage')
 
   const sidebarLinks = [
     {
@@ -30,6 +32,20 @@ const NavSidebar = () => {
       active: true,
       label: 'Patients',
       link: '/patients',
+      haveSubMenus: false,
+      icon: <FaUsers />
+    },
+    {
+      active: true,
+      label: 'Reports',
+      link: '/reports',
+      haveSubMenus: false,
+      icon: <FaUsers />
+    },
+    {
+      active: true,
+      label: 'Payment Details',
+      link: '/payment-details',
       haveSubMenus: false,
       icon: <FaUsers />
     },
@@ -58,7 +74,12 @@ const NavSidebar = () => {
       </div>
       <div className="ssui-body">
         {sidebarLinks && sidebarLinks.map((item, idx) =>
-          <Link onClick={() => handleActivePage(item.link)} className='ssui-link' key={idx} to={`${item.link}`}>
+          <Link 
+            onClick={() => handleActivePage(item.link)} 
+            className= {activePage !== item.link ?  'ssui-link' : 'ssui-link active'}
+            key={idx} 
+            to={`${item.link}`}
+            >
             <span className="icon">{item.icon}</span>
             <span className="label">{item.label}</span>
           </Link>)

@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <div className="admin-header">
-      <div className="container">
+      <div className="container-fluid">
         <nav className="navbar navbar-expand-lg">
           Welcome to Dashboard!
         </nav>

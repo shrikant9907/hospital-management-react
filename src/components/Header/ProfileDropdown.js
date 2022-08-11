@@ -18,15 +18,15 @@ const ProfileDropdown = () => {
   }
 
   return (
-    <div class="profile-dropdown dropdown ms-auto">
-      <button class="dropdown-toggle" onClick={() => setShowLinks(!showLinks)}>
+    <div className="profile-dropdown dropdown ms-auto">
+      <button className="dropdown-toggle" onClick={() => setShowLinks(!showLinks)}>
         <img src='https://i.pravatar.cc/300' alt='Avatar' />
       </button>
       {
-        showLinks && <div class="dropdown-menu show">
-        <Link class="dropdown-item" to="/profile">Profile</Link>
-        <Link class="dropdown-item" to="/settings">Settings</Link>
-        <span onClick={() => handleLogout()}  class="dropdown-item">Logout</span>
+        showLinks && <div className="dropdown-menu show">
+        <Link className="dropdown-item" to="/profile">Profile</Link>
+        <Link className="dropdown-item" to="/settings">Settings</Link>
+        <span onClick={() => handleLogout()}  className="dropdown-item">Logout</span>
       </div>
       }
     </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import DashboardLayout from '../_layouts/DashboardLayout';
 
-const SettingsPage = (props) => {
+const ReportsPage = (props) => {
   return (
     <>
-      <DashboardLayout heading='Settings'>
-       Settings
+      <DashboardLayout heading="Reports">
+        Reports Page
       </DashboardLayout>
     </>
   )
 }
 
-export default SettingsPage;
+export default ReportsPage;

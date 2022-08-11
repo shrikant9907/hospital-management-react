@@ -4,7 +4,9 @@ import LoginPage from "../pages/LoginPage";
 import OTPVerificationPage from "../pages/OTPVerificationPage";
 import PageNotFound from "../pages/PageNotFound";
 import PatientsPage from "../pages/PatientsPage";
+import PaymentDetailsPage from "../pages/PaymentDetails";
 import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
+import ReportsPage from "../pages/ReportsPage";
 import SettingsPage from "../pages/SettingsPage";
 import SignupPage from "../pages/SignupPage";
 import TermsAndConditionsPage from "../pages/TermsAndConditionsPage";
@@ -31,6 +33,14 @@ export const AppRouting = [
   {
     path: "/users",
     element: <UsersPage />
+  },
+  {
+    path: "/reports",
+    element: <ReportsPage />
+  },
+  {
+    path: "/payment-details",
+    element: <PaymentDetailsPage />
   },
   {
     path: "/profile",
@@ -65,32 +75,4 @@ export const AppRouting = [
     element: <PageNotFound />
   },
 ]
-
-// Sidebar Links
-export const SidebarLinks = [
-  {
-    name: 'Home',
-    to: '/',
-    show: true
-  },
-  {
-    name: 'About',
-    to: '/about',
-    show: true
-  },
-  {
-    name: 'Components',
-    to: '/',
-    show: true
-  },
-  {
-    name: 'Layouts',
-    to: '/layouts',
-    show: true
-  },
-  {
-    name: 'Examples',
-    to: '/examples',
-    show: true
-  }
-]
+ 

@@ -10,6 +10,7 @@ const DashboardLayout = (props) => {
       <NavSidebar />
       <Header />
       <div className="content-area">
+        {props.heading && props.heading !=='' && <h3 className="heading-ui type2">{props.heading}</h3>}
         {props.children}
       </div>
       <Footer />

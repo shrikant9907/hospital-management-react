@@ -4,7 +4,7 @@ import DashboardLayout from '../_layouts/DashboardLayout';
 const DoctorsPage = (props) => {
   return (
     <>
-      <DashboardLayout>
+      <DashboardLayout heading="Doctors">
         Doctors Page
       </DashboardLayout>
     </>

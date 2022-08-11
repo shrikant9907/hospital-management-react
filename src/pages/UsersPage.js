@@ -4,7 +4,7 @@ import DashboardLayout from '../_layouts/DashboardLayout';
 const UsersPage = (props) => {
   return (
     <>
-      <DashboardLayout>
+      <DashboardLayout heading="Users">
         Users Page
       </DashboardLayout>
     </>
