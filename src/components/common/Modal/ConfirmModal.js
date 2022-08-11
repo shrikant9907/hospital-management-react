@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import { Modal, Button } from 'react-bootstrap';
-import './BasicModalUi.scss';
+import './Modal.scss';
 
-const BasicModal = (props) => {
+const CustomModal = (props) => {
 
-  const { title, content } = props;
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const { title } = props;
+ 
+  const handleClose = () => {
+    props.onClose && props.onClose(false)
+  }; 
 
   return (
     <React.Fragment>
 
-      <i onClick={handleShow}
-        className="fas fa-question-circle mr-5 text-primary modalTriggerIcon"
-      ></i>
-      <Modal className="themeModal" show={show} onHide={handleClose}>
+      <Modal className="themeModal" show={true} onHide={handleClose}>
 
         <Modal.Header closeButton>
           {
@@ -26,7 +22,7 @@ const BasicModal = (props) => {
           }
         </Modal.Header>
 
-        <Modal.Body>{content}</Modal.Body>
+        <Modal.Body>{props.children}</Modal.Body>
 
         <Modal.Footer>
           <Button variant="outline-primary" onClick={() => handleClose()}>Close</Button>
@@ -39,4 +35,4 @@ const BasicModal = (props) => {
   );
 };
 
-export default BasicModal;
+export default CustomModal;

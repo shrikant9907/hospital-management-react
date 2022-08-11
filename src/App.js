@@ -16,7 +16,7 @@ const App = () => {
         </Routes>
       </Router>
       <Toaster
-        position="top-center"
+        position="bottom-center"
         reverseOrder={false}
       />
     </>
