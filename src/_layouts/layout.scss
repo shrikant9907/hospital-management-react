@@ -1,0 +1,28 @@
+.auth-page-ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(226, 226, 226);
+
+  .page-heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+  }
+
+  .auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
