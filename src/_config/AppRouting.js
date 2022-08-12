@@ -1,5 +1,6 @@
 import DashboardPage from "../pages/DashboardPage";
 import DoctorsPage from "../pages/DoctorsPage";
+import ForgotPasswordPage from "../pages/ForgotPasswordPage";
 import LoginPage from "../pages/LoginPage";
 import OTPVerificationPage from "../pages/OTPVerificationPage";
 import PageNotFound from "../pages/PageNotFound";
@@ -57,6 +58,10 @@ export const AppRouting = [
   {
     path: "/signup",
     element: <SignupPage />
+  },
+  {
+    path: "/forgot-password",
+    element: <ForgotPasswordPage />
   },
   {
     path: "/otp-verification",
